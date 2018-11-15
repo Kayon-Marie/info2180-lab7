@@ -19,7 +19,7 @@ window.onload = () =>{
         if(httpRequest.readyState === XMLHttpRequest.DONE){
             if(httpRequest.status === 200){
                 let response = httpRequest.responseText;
-                alert(response);
+                result.innerHTML = response;
             }
             else{
                 alert('There is a problem with the request');
